@@ -17,9 +17,9 @@ namespace Systems
         }
         protected override void OnUpdate()
         {
-            if (_playableGraphComponentGroup.CalculateLength() == 0) return;
+            if (_playableGraphComponentGroup.CalculateEntityCount() == 0) return;
 
-            var dt = Time.deltaTime;
+            var dt = UnityEngine.Time.deltaTime;
 
             var entityArray = _playableGraphComponentGroup.ToEntityArray(Allocator.TempJob);
 
