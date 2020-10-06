@@ -10,6 +10,7 @@ namespace Systems
 {
     [UpdateAfter(typeof(CleanRendererSystem))]
     [UpdateInGroup(typeof(AnimationSystemGroup))]
+    [DisableAutoCreation]
     public class BufferExtenderSystem : ComponentSystem
     {
         private RendererGroup _rendererGroup;
